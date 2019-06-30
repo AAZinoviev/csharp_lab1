@@ -29,14 +29,14 @@ namespace lab1
             Z = z;
         }
 
-        public IVector3f Sum(IVector3f other) => new Vector3f(X + other.X, Y + other.Y, Z + other.Z);
+        public virtual IVector3f Sum(IVector3f other) => new Vector3f(X + other.X, Y + other.Y, Z + other.Z);
 
-        public IVector3f Diff(IVector3f other) => new Vector3f(X - other.X, Y - other.Y, Z - other.Z);
+        public virtual IVector3f Diff(IVector3f other) => new Vector3f(X - other.X, Y - other.Y, Z - other.Z);
 
-        public float Dot(IVector3f other) => X * other.X + Y * other.Y + Z * other.Z;
+        public virtual float Dot(IVector3f other) => X * other.X + Y * other.Y + Z * other.Z;
 
-        public float Lenght() => (float) Math.Sqrt(X*X + Y*Y + Z*Z);
+        public virtual float Lenght() => (float) Math.Sqrt(X*X + Y*Y + Z*Z);
 
-        public float Cos(IVector3f other) => Dot(other) / (Lenght() * other.Lenght());
+        public virtual float Cos(IVector3f other) => Dot(other) / (Lenght() * other.Lenght());
     }
 }
