@@ -36,5 +36,7 @@ namespace lab1
         public virtual float Lenght() => (float) Math.Sqrt(X*X + Y*Y + Z*Z);
 
         public virtual float Cos(IVector3f other) => Dot(other) / (Lenght() * other.Lenght());
+
+        public override string ToString() => $"Vector3f {{{X}, {Y}, {Z}}}";
     }
 }
