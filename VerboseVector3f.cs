@@ -20,31 +20,31 @@ namespace lab1
 
         public override IVector3f Sum(IVector3f other)
         {
-            Console.WriteLine("Overriden method {} is called", System.Reflection.MethodBase.GetCurrentMethod().Name);
+            Console.WriteLine("Overriden method {0} is called", System.Reflection.MethodBase.GetCurrentMethod().Name);
             return base.Sum(other);
         }
 
         public override IVector3f Diff(IVector3f other)
         {
-            Console.WriteLine("Overriden method {} is called", System.Reflection.MethodBase.GetCurrentMethod().Name);
+            Console.WriteLine("Overriden method {0} is called", System.Reflection.MethodBase.GetCurrentMethod().Name);
             return base.Diff(other);
         }
 
         public override float Dot(IVector3f other)
         {
-            Console.WriteLine("Overriden method {} is called", System.Reflection.MethodBase.GetCurrentMethod().Name);
+            Console.WriteLine("Overriden method {0} is called", System.Reflection.MethodBase.GetCurrentMethod().Name);
             return base.Dot(other);
         }
 
         public override float Lenght()
         {
-            Console.WriteLine("Overriden method {} is called", System.Reflection.MethodBase.GetCurrentMethod().Name);
+            Console.WriteLine("Overriden method {0} is called", System.Reflection.MethodBase.GetCurrentMethod().Name);
             return base.Lenght();
         }
 
         public override float Cos(IVector3f other)
         {
-            Console.WriteLine("Overriden method {} is called", System.Reflection.MethodBase.GetCurrentMethod().Name);
+            Console.WriteLine("Overriden method {0} is called", System.Reflection.MethodBase.GetCurrentMethod().Name);
             return base.Cos(other);
         }
 
